@@ -1,0 +1,8 @@
+USE lab3
+GO
+--INSERT INTO ANIMAL VALUES(30, 'Rex', 'Dog', 3)
+-- part 1
+BEGIN TRAN
+UPDATE Animal SET name = 'Alia' WHERE aid = 30
+WAITFOR DELAY '00:00:06'
+ROLLBACK TRAN
